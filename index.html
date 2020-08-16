@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="theContent">
+      <div>
+        <header>
+          <div class="container">
+            <img
+              src="images/default.png"
+              alt="logo"
+              style="width: 100px; height : 80px;"
+              class="logo"
+            />
+
+            <nav>
+              <ul>
+                <li><a href="#" id="Home">Home</a></li>
+                <li><a href="#app1" onclick="allproducts()">All Products</a></li>
+                <li><a href="#model">Categories</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <div>
+        <video autoplay muted loop id="WatchVideo">
+          <source src="images/Pexels_Videos_2385277.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="VideoContent">
+        <h1>
+          Welcome To Smart Watch Village!
+        </h1>
+        <p>Shop your favorite smart watch from all the brands available in the market</p>
+      </div>
+
+      <div class="center_Block">
+        <div class="shop" id="app1">
+          <img
+            src="images/pinpng.com-apple-watch-png-99601.png"
+            alt="Apple watch"
+            style="width: 100%; "
+          />
+          <h1>Apple Watch Series 2 For Ladies</h1>
+          <p class="price">CAD $259.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="app2">
+          <img src="images/applewatch_series3.png" alt="Apple watch" style="width: 100%; " />
+          <h1>Apple Watch Series 3</h1>
+          <p class="price">CAD $599.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="app3">
+          <img src="images/applewatch_series3_Ladies.png" alt="Apple watch" style="width: 100%;" />
+          <h1>Apple Watch Series 3 for Ladies</h1>
+          <p class="price">CAD $599.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="app4">
+          <img src="images/applewatch_series3_nike.png" alt="Apple watch" style="width: 100%;" />
+          <h1>Apple Watch Series 3 - Nike Band</h1>
+          <p class="price">CAD $699.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="fit1">
+          <img
+            src="images/fitbit_blaze_special_edition.png"
+            alt="Fitbit watch"
+            style="width: 100%;"
+          />
+          <h1>Fitbit Blaze</h1>
+          <p class="price">CAD $349.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="fit2">
+          <img src="images/Fitbit_versa_GoldRose.png" alt="Fitbit watch" style="width: 100%;" />
+          <h1>Fitbit Versa - Gold Rose</h1>
+          <p class="price">CAD $399.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="fit3">
+          <img src="images/fitbit-versa-light-pink.png" alt="Fitbit watch" style="width: 100%;" />
+          <h1>Fitbit Versa Pink - Ladies</h1>
+          <p class="price">CAD $399.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="shop" id="fit4">
+          <img src="images/fitbit_surge.png" alt="Fitbit watch" style="width: 100%;" />
+          <h1>Fitbit Surge - For Ladies</h1>
+          <p class="price">CAD $499.99</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="brand left" id="model">
+        <div class="middle">
+          <img src="images/pinpng.com-apple-logo-png-1233656.png" alt="Logo" />
+          <h2>Apple</h2>
+
+          <a href="#gender" onclick="appleFunc()" id="but1L">Choose Your Brand</a>
+        </div>
+      </div>
+
+      <div class="brand right">
+        <div class="middle">
+          <img src="images/fitbit-logo-3943.png" alt="fit logo" />
+          <h2>Fitbit</h2>
+          <a href="#gender" onclick="fitbitFunc()" id="but1R">Choose Your Brand</a>
+        </div>
+      </div>
+
+      <div class="brand2 left2" id="gender">
+        <div class="middle">
+          <img src="images/female-icon.png" alt="Logo" />
+          <h2>Women</h2>
+          <a href="#app1" onclick="femaleFunc()" id="but2L">
+            For Women
+          </a>
+        </div>
+      </div>
+
+      <div class="brand2 right2">
+        <div class="middle">
+          <img src="images/male-icon.png" alt="fit logo" />
+          <h2>Men</h2>
+
+          <a href="#fit1" onclick="maleFunc()" id="but2R">For Men</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="materialUnchecked" />
+      <label class="form-check-label" for="materialUnchecked">Material unchecked</label>
+    </div> -->
+  </body>
+
+  <div class="footer">
+    <div class="interiorFooter">
+      <div class="footerLogo">
+        <img src="images/default.png" alt="" />
+      </div>
+
+      <div class="footerClass">
+        <h1>Need Assistance?</h1>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footerClass">
+        <h1>More</h1>
+        <a href="#">My Products</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="footerClass">
+        <h1>Follow Us</h1>
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+
+        <form action="https://formspree.io/xeqrdvky" method="POST">
+          <div class="form-group">
+            <p>Feel free to subscribe to get early notifications for our new arrivals!</p>
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              name="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</html>

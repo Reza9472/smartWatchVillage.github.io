@@ -1,0 +1,410 @@
+/* Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.theContent {
+  padding-top: 2.5px;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+.contain {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ilogo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  padding: 20px;
+  width: 100%;
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  font-family: 'Indie Flower', cursive;
+  color: lightblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+.VideoContent {
+  padding: 20px;
+  width: 100%;
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  position: absolute;
+  font-family: 'Lemonada', cursive;
+}
+
+#WatchVideo {
+  min-height: 10px;
+  min-width: 10px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.shop {
+  position: relative;
+  z-index: 1;
+  top: 2600px;
+  height: 200%;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  max-width: 300px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  color: #444;
+  font-size: 22px;
+}
+
+.shop button {
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  color: #f1f1f1;
+  outline: 0;
+  border: none;
+  padding: 12px;
+  background-color: #000;
+}
+
+.shop button:hover {
+  opacity: 0.6;
+}
+
+.brand2 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 200%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.brand {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  background-color: lightskyblue;
+  left: 0;
+}
+
+.right {
+  background-color: mediumaquamarine;
+  right: 0;
+}
+
+.left2 {
+  background-color: lightcoral;
+  left: 0;
+}
+
+.right2 {
+  background-color: lightgoldenrodyellow;
+  right: 0;
+}
+
+#but1L a {
+  text-decoration: none;
+}
+
+#but1R a {
+  text-decoration: none;
+}
+
+.middle {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.center_Block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#but1L {
+  text-decoration: none;
+  background-color: mediumaquamarine;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+#but1R {
+  text-decoration: none;
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+#but2R {
+  text-decoration: none;
+  background-color: lightcoral;
+  color: black;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+#but2L {
+  text-decoration: none;
+  background-color: lightyellow;
+  color: black;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+/* footer {
+  clear: both;
+  min-height: 300%;
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background-color: lightseagreen;
+  color: azure;
+  text-align: center;
+} */
+
+/* section {
+  display: inline-block;
+} */
+
+/* .nav-icon {
+  position: sticky;
+  margin: 1em;
+  width: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon:hover::before {
+  transform: translateY(12px) rotate(135deg);
+}
+.nav-icon:hover div {
+  transform: scale(0);
+} */
+
+/* .nav-icon:hover #centerMenu {
+  visibility: visible;
+} */
+
+/* #centerMenu {
+  visibility: hidden;
+  border-radius: 500px;
+  background-color: khaki;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+} */
+
+.footer {
+  position: relative;
+  top: 2700px;
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #18181a;
+}
+
+.interiorFooter {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.interiorFooter .footerLogo {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.interiorFooter .footerLogo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.interiorFooter .footerClass {
+  width: calc(20% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 20%;
+}
+
+
+.interiorFooter .footerClass h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: azure;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.interiorFooter .footerClass:last-child {
+margin-right: 0;
+}
+
+.interiorFooter .footerClass a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: azure;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 200;
+  padding-bottom: 5px;
+}
+
+.interiorFooter .footerClass li {
+  display: inline-block;
+  padding: 0;
+  font-size: 20px;
+}
+
+.interiorFooter .footerClass span {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 200px;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer .interiorFooter {
+    width: 90%;
+  }
+
+  .interiorFooter .footerLogo,
+  .interiorFooter .footerClass {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.form-group p {
+  color: white;
+}
+
+.form-group label {
+  color: #f1f1f1;
+}

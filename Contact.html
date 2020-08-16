@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="Contact.css" />
+    <script src="Contact.js"></script>
+  
+  </head>
+  <body>
+    <div class="theContent">
+      <header>
+        <div class="container">
+          <img
+            src="images/default.png"
+            alt="logo"
+            style="width: 100px; height : 80px;"
+            class="logo"
+          />
+
+          <!-- <div class="nav-icon">
+            <div id="menuBut"></div>
+          </div> -->
+
+          <nav>
+            <ul>
+              <li><a href="index.html" id="Home">Home</a></li>
+              <li><a href="index.html">All Products</a></li>
+              <li><a href="index.html">Categories</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <form action="https://httpbin.org/post" autocomplete="off" name="contact_form" method="POST">
+        <div class="contain">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name..">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email Address..">
+
+          <label for="city">Cities</label>
+          <input required type="text" list="cities" name="city" placeholder="Enter Your City..">
+          <datalist id="cities">
+            <option value="Toronto">
+            <option value="Montreal">
+            <option value="Calgary">
+            <option value="Ottawa">
+            <option value="Edmonton">
+            <option value="Mississauga">
+            <option value="Winnipeg">
+            <option value="Vancouver">
+            <option value="Brampton">
+            <option value="Hamilton">
+            <option value="Quebec City">
+            <option value="Surrey">
+            <option value="Laval">
+            <option value="Halifax">
+            <option value="London">
+            <option value="Markham">
+            <option value="Vaughan">
+            <option value="Gatineau">
+            <option value="Saskatoon">
+            <option value="Longueuil">
+            <option value="Kitchener">
+            <option value="Burnaby">
+            <option value="Windsor">
+            <option value="Regina">
+            <option value="Richmond">
+            <option value="Richmond Hill">
+            <option value="Oakville">
+            <option value="Burlington">
+            <option value="Greater Sudbury">
+            <option value="Sherbrooke">
+            <option value="Oshawa">
+            <option value="Saguenay">
+            <option value="Lévis">
+            <option value="Barrie">
+            <option value="Abbotsford">
+            <option value="Coquitlam">
+            <option value="Trois-Rivières">
+            <option value="St. Catharines">
+            <option value="Guelph">
+            <option value="Cambridge">
+            <option value="Whitby">
+            <option value="Kelowna">
+            <option value="Kingston">
+            <option value="Ajax">
+            <option value="Langley">
+            <option value="Saanich">
+            <option value="Terrebonne">
+            <option value="Milton">
+            <option value="St. John's">
+            <option value="Thunder Bay">
+            <option value="Waterloo">
+            <option value="Delta">
+            <option value="Chatham-Kent">
+            <option value="Red Deer">
+            <option value="Strathcona County">
+            <option value="Brantford">
+            <option value="Saint-Jean-sur-Richelieu">
+            <option value="Cape Breton">
+            <option value="Lethbridge">
+            <option value="Clarington">
+            <option value="Pickering">
+            <option value="Nanaimo">
+            <option value="Kamloops">
+            <option value="Niagara Falls">
+            <option value="North Vancouver">
+            <option value="Victoria">
+            <option value="Brossard">
+            <option value="Repentigny">
+            <option value="Newmarket">
+            <option value="Chilliwack">
+            <option value="Maple Ridge">
+            <option value="Peterborough">
+            <option value="Kawartha Lakes">
+            <option value="Drummondville">
+            <option value="Saint-Jérôme">
+            <option value="Prince George">
+            <option value="Sault Ste. Marie">
+            <option value="Moncton">
+            <option value="Sarnia">
+            <option value="Wood Buffalo">
+            <option value="New Westminster">
+            <option value="Saint John">
+            <option value="Caledon">
+            <option value="Granby">
+            <option value="St. Albert">
+            <option value="Norfolk County">
+            <option value="Medicine Hat">
+            <option value="Grande Prairie">
+            <option value="Airdrie">
+            <option value="Halton Hills">
+            <option value="Port Coquitlam">
+            <option value="Fredericton">
+            <option value="Blainville">
+            <option value="Saint-Hyacinthe">
+            <option value="Aurora">
+            <option value="North Vancouver">
+            <option value="Welland">
+            <option value="North Bay">
+            <option value="Belleville">
+            <option value="Mirabel">
+          </datalist><br />
+      
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+
+
+          
+          <!-- <label for="postalcode">Postal Code:</label><br />
+          <input required type="text" name="postalcode" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
+          title="Enter a valid Canadian postal code"/><br />
+          
+          <input type="radio" id="question" name="rad_but" value="question">
+          <label for="question">Question</label><br>
+          <input type="radio" id="comment" name="rad_but" value="comment">
+          <label for="comment">Comment</label><br>
+          <input type="radio" id="order" name="rad_but" value="order">
+          <label for="order">Order Problem</label>
+          <br> -->
+          
+
+          <label for="radio_but">Select one of the following options</label><br>
+
+          <input type="radio" name="radio_but" value="question" />
+          <label for="question">Question</label><br />
+      
+          <input type="radio" name="radio_but" value="comment" />
+          <label for="comment">Comment</label><br />
+      
+          <input type="radio" name="radio_but" value="orderproblem" />
+          <label for="orderproblem">Order Problem</label><br />
+      
+          <div id="order">
+            <label for="ordernumber">Order Number</label><br />
+            <input type="text" name="ordernumber" />
+          </div>
+      
+          <!-- <textarea required name="message"></textarea> -->
+          <textarea id="subject" name="subject" placeholder="Please Type Your Message Here.." style="height:200px"></textarea>
+      
+          <input type="hidden" name="name" value="Reza" /><br />
+      
+          <input type="submit">
+
+          
+      
+        </form>
+      </div>
+
+  </body>
+</html>
